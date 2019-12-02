@@ -1,0 +1,22 @@
+image: node:latest
+
+runInParallel: true
+exitOnFailure: true
+
+before:
+  - name: Build
+    run: yarn build
+
+steps:
+  - name: Lint
+    run: yarn lint
+
+  - name: Format Check
+    run: yarn format:check
+
+  - name: Unit Tests
+    run: yarn test
+
+after:
+  - name: Notify!
+    run: echo 'Everything is done'

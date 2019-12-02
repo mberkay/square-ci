@@ -12,16 +12,10 @@ image = config["image"]
 # TODO run each task
 # os.system("docker run -it ")
 
-
-
 # cmd = "git --version"
 #
 # returned_value = subprocess.call(cmd, shell=True, stdout=False)  # returns the exit code in unix
 # print('returned value:', returned_value)
-
-# try:
-# except OSError:
-#     print('wrongcommand does not exist')
 
 # test = os.system("docker exec -it b3491b0b0eba python my_script.py")
 # print(test)
